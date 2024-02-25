@@ -90,8 +90,8 @@ fullscreen = 1
 #android.presplash_lottie = "path/to/lottie/file.json"
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
-icon.adaptive_foreground.filename = %(source.dir)s/main/logo.png
-icon.adaptive_background.filename = %(source.dir)s/main/logo.png
+#icon.adaptive_foreground.filename = %(source.dir)s/main/logo.png
+#icon.adaptive_background.filename = %(source.dir)s/main/logo.png
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
@@ -101,13 +101,13 @@ android.permissions = android.permission.INTERNET, (name=android.permission.WRIT
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 31
+android.api = 34
 
 # (int) Minimum API your APK / AAB will support.
 android.minapi = 21
 
 # (int) Android SDK version to use
-android.sdk = 20
+android.sdk = 34
 
 # (str) Android NDK version to use
 android.ndk = 25b
