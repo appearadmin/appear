@@ -89,11 +89,11 @@ class StudentScreen1(Screen):
         self.float.grid.cblabel2.text = "Cleanliness of the CR"
         self.float.grid.cblabel3.text = "Mosquitoes"
         self.float.grid.cblabel4.text = "Smoke"
-        self.float.grid.cblabel5.text = "Mga putik pagkatapos ng ulan"
-        self.float.grid.cblabel6.text = "Mga Garbage Bag na pakalat kalat"
-        self.float.grid.cblabel7.text = "Nawawalan ng tubig sa CR"
-        self.float.grid.cblabel8.text = "Ilaw sa CR"
-        self.float.grid.cblabel9.text = "Mga sirang bangko"
+        self.float.grid.cblabel5.text = "Mud after rain"
+        self.float.grid.cblabel6.text = "Scattered Garbage"
+        self.float.grid.cblabel7.text = "Lack of running water in restrooms"
+        self.float.grid.cblabel8.text = "Broken lights and doors in restroom"
+        self.float.grid.cblabel9.text = "Broken Chairs"
         
         self.float.grid.checkb1.bind(active=self.on_checkbox1)
         self.float.grid.checkb2.bind(active=self.on_checkbox2)
@@ -202,7 +202,7 @@ class StudentScreen2(Screen):
 
         self.float.grid.cblabel10.text = "Water Cleanliness"
         self.float.grid.cblabel11.text = "Fallen leaves"
-        self.float.grid.cblabel12.text = "Robberes"
+        self.float.grid.cblabel12.text = "Robbers"
         self.float.grid.cblabel13.text = "CR Maintenance"
         self.float.grid.cblabel14.text = "Proper Garbage Disposal"
         self.float.grid.cblabel15.text = "Dirty Hallway and Rooms"
@@ -331,11 +331,11 @@ class TeacherScreen1(Screen):
         self.float.grid.cblabel2.text = "Cleanliness of the CR"
         self.float.grid.cblabel3.text = "Mosquitoes"
         self.float.grid.cblabel4.text = "Smoke"
-        self.float.grid.cblabel5.text = "Mga putik pagkatapos ng ulan"
-        self.float.grid.cblabel6.text = "Mga Garbage Bag na pakalat kalat"
-        self.float.grid.cblabel7.text = "Nawawalan ng tubig sa CR"
-        self.float.grid.cblabel8.text = "Ilaw sa CR"
-        self.float.grid.cblabel9.text = "Mga sirang bangko"
+        self.float.grid.cblabel5.text = "Mud after rain"
+        self.float.grid.cblabel6.text = "Scattered Garbage"
+        self.float.grid.cblabel7.text = "Lack of running water in restrooms"
+        self.float.grid.cblabel8.text = "Broken lights and doors in restroom"
+        self.float.grid.cblabel9.text = "Broken Chairs"
         
         self.float.grid.checkb1.bind(active=self.on_checkbox1)
         self.float.grid.checkb2.bind(active=self.on_checkbox2)
@@ -461,47 +461,47 @@ class TeacherScreen2(Screen):
 
     def on_checkbox10(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("10")
+            TeacherScreen1.concerns.append("10")
         else:
-            StudentScreen1.concerns.remove("10")
+            TeacherScreen1.concerns.remove("10")
 
     def on_checkbox11(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("11")
+            TeacherScreen1.concerns.append("11")
         else:
-            StudentScreen1.concerns.remove("11")
+            TeacherScreen1.concerns.remove("11")
 
     def on_checkbox12(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("12")
+            TeacherScreen1.concerns.append("12")
         else:
-            StudentScreen1.concerns.remove("12")
+            TeacherScreen1.concerns.remove("12")
 
     def on_checkbox13(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("13")
+            TeacherScreen1.concerns.append("13")
         else:
-            StudentScreen1.concerns.remove("13")
+            TeacherScreen1.concerns.remove("13")
     
     def on_checkbox14(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("14")
+            TeacherScreen1.concerns.append("14")
         else:
-            StudentScreen1.concerns.remove("14")
+            TeacherScreen1.concerns.remove("14")
     
     def on_checkbox15(self, inst, value):
         if value == True:
-            StudentScreen1.concerns.append("15")
+            TeacherScreen1.concerns.append("15")
         else:
-            StudentScreen1.concerns.remove("15")
+            TeacherScreen1.concerns.remove("15")
 
     def submit(self, inst):
         self.timestamp = str(curr_dat) + str(curr_tim)
 
         doc_ref = db.collection("users").document(self.timestamp)
-        doc_ref.set({"fullname": StudentScreen1.fname[0],
-                     "yearsec": StudentScreen1.yrsc[0], 
-                     "concerns": StudentScreen1.concerns,
+        doc_ref.set({"fullname": TeacherScreen1.fname[0],
+                     "yearsec": TeacherScreen1.yrsc[0], 
+                     "concerns": TeacherScreen1.concerns,
                      "other": self.float.other.text,
                      "role": self.role})
         
