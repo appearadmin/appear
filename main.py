@@ -4,19 +4,19 @@ from kivy.core.window import Window
 from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.uix.gridlayout import GridLayout
 from kivy.utils import platform
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
-import datetime
-import time
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import firestore
+# import datetime
+# import time
 
 Window.size = (350, 600)
 
-cred = credentials.Certificate('appear.json')
-app = firebase_admin.initialize_app(cred)
-db = firestore.client()
-curr_dat = datetime.date.today()
-curr_tim = time.time()
+# cred = credentials.Certificate('appear.json')
+# app = firebase_admin.initialize_app(cred)
+# db = firestore.client()
+# curr_dat = datetime.date.today()
+# curr_tim = time.time()
 
 class MainScreen(Screen):
 
