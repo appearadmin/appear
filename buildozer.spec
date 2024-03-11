@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy, datetime, kivymd, Kivy-Garden, firebase-admin
+requirements = python3, hostpython3, Cython==0.29.33, pillow, kivy, datetime, kivymd, firebase-admin
 #,certifi,chardet,lxml,docutils,future,idna,Kivy-Garden, Pygments, requests, six, soupsieve,
 #orllib3, deep-translator, arabic-reshaper, python-bidi, openssl, pyopenssl, numpy, pytz, python-dateutil, pandas, setuptools, zope.interface, datetime, kivymd
 
