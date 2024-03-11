@@ -10,8 +10,6 @@ from firebase_admin import firestore
 import datetime
 import time
 
-Window.size = (350, 600)
-
 cred = credentials.Certificate('appear.json')
 app = firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -515,6 +513,18 @@ class LastScreen(Screen):
         appfloat().stop()
 
 class appfloat(MDApp):
+    def build(self):
+
+        def build(self):
+        if(platform == 'android'):
+            Window.maximize()
+        if(platform == 'ios'):
+            Window.maximize()
+        else:
+            Window.size = (350, 600)
+        self.theme_cls.primary_palette = "Gray"
+        self.theme_cls.theme_style = "Light"
+        
         self.theme_cls.primary_palette = "Gray"
         self.theme_cls.theme_style = "Light"
 
