@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.8,hostpython3==3.7.8,Cython==0.29.33,pillow,kivy==1.11.1, datetime
+requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy, datetime
 #,certifi,chardet,lxml,docutils,future,idna,Kivy-Garden, Pygments, requests, six, soupsieve,
 #orllib3, deep-translator, arabic-reshaper, python-bidi, openssl, pyopenssl, numpy, pytz, python-dateutil, pandas, setuptools, zope.interface, datetime
 
@@ -66,7 +66,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3.11.1
 
 # Kivy version to use
 osx.kivy_version = 2.3.0
