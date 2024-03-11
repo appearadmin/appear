@@ -37,8 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy==2.2.0,kivymd
-#,firebasefirestore
+requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy==2.2.0,kivymd,firebase,python-firebase
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
