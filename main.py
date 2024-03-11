@@ -514,17 +514,13 @@ class LastScreen(Screen):
 
 class appfloat(MDApp):
     def build(self):
-
-        def build(self):
         if(platform == 'android'):
             Window.maximize()
         if(platform == 'ios'):
             Window.maximize()
         else:
             Window.size = (350, 600)
-        self.theme_cls.primary_palette = "Gray"
-        self.theme_cls.theme_style = "Light"
-        
+            
         self.theme_cls.primary_palette = "Gray"
         self.theme_cls.theme_style = "Light"
 
@@ -538,7 +534,7 @@ class appfloat(MDApp):
         sm.add_widget(TeacherScreen2(name="teacher2"))
         sm.add_widget(LastScreen(name="last"))
 
-            return screen
+        return screen
         
 if __name__ == "__main__":
     appfloat().run()
