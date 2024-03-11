@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = sampleapp
+title = AppEAR
 
 # (str) Package name
-package.name = sampleapp
+package.name = AppEAR
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy==2.2.0,kivymd,firebase
+requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy==2.2.0,kivymd,firebase-admin
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -47,7 +47,7 @@ requirements = python3,hostpython3,Cython==0.29.33,pillow,kivy==2.2.0,kivymd,fir
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/data/logo.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
