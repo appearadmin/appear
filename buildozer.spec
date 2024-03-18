@@ -177,7 +177,7 @@ fullscreen = 1
 
 # (list) List of Java files to add to the android project (can be java or a
 # directory containing the files)
-#android.add_src =
+android.add_src = libs/
 
 # (list) Android AAR archives to add
 #android.add_aars =
@@ -201,7 +201,7 @@ fullscreen = 1
 #android.add_resources =
 
 # (list) Gradle dependencies to add
-#android.gradle_dependencies =
+android.gradle_dependencies = com.google.firebase:firebase-messaging,com.google.firebase:firebase-analytics,com.google.code.gson:gson:2.8.6
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
@@ -328,7 +328,7 @@ p4a.branch = release-2022.12.20
 #p4a.commit = HEAD
 
 # (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
-#p4a.source_dir =
+p4a.source_dir = /path/to/cloned/python-for-android
 
 # (str) The directory in which python-for-android should look for your own build recipes (if any)
 #p4a.local_recipes =
